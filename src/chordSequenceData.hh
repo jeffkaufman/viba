@@ -15,7 +15,7 @@
 class ChordSequenceData : public SimpleSequenceData<ChordEvent>
 {
 public:
-  ChordSequenceData(TimeDelta length) : SimpleSequenceData(length) {};
+  ChordSequenceData(TimeDelta length) : SimpleSequenceData<ChordEvent>(length) {};
 
   void PushBack(const ChordEvent& event) {
     if (mData.size() > 0) {

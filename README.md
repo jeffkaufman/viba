@@ -21,3 +21,6 @@ Mac Port
 ========
 
 This is a highly experimental port for OSX.
+
+    sudo port install glibmm libxmlxx2 fluidsynth libsigcxx2 \
+                      gtkmm goocanvasmm boost boost-build

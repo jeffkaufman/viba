@@ -36,7 +36,7 @@ FluidOutputSequence::FluidOutputSequence()
   mSettings = new_fluid_settings();
   fluid_settings_setstr(mSettings, "synth.reverb.active", "yes");
   fluid_settings_setstr(mSettings, "synth.chorus.active", "no");
-  fluid_settings_setstr(mSettings, "audio.driver", "pulseaudio");
+  fluid_settings_setstr(mSettings, "audio.driver", "coreaudio");
   mSynth = new_fluid_synth(mSettings);
   mSequencer = new_fluid_sequencer2(FALSE);
 
@@ -44,7 +44,7 @@ FluidOutputSequence::FluidOutputSequence()
     mSynthSeqID = fluid_sequencer_register_fluidsynth(mSequencer, mSynth);
 
     // put your own path here
-    fluid_synth_sfload(mSynth, "/usr/share/sounds/sf2/FluidR3_GM.sf2", 1);
+    fluid_synth_sfload(mSynth, "FluidR3_GM.sf2", 1);
     //    fluid_res = fluid_synth_sfload(mSynth, "/home/clahey/workspace/viba/12ACGUIT.SF2", 1);
 
     // register myself as second destination
