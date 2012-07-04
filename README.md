@@ -16,3 +16,8 @@ To try it out, install a bunch of packages on your machine (I'll make
 a list of packages soon.  An important one is fluid-soundfont-gm.)
 Then run the standard autoreconf, configure, make series and run
 src/viba.
+
+Mac Port
+========
+
+This is a highly experimental port for OSX.
