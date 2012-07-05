@@ -77,6 +77,6 @@ LocalLibrary::LoadTune(const Glib::ustring& filename)
 void
 LocalLibrary::Load()
 {
-  LoadTune("banksoftheallan.xml");
+  // LoadTune("banksoftheallan.xml");
   LoadTune("banshee.xml");
 }
