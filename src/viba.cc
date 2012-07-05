@@ -95,7 +95,7 @@ int main(int argc, char* argv[]) {
 
   //  output->ScheduleCallback(timeMgr->mSongState.mRepeatStart + TimeDelta::sBar * 32, sigc::mem_fun(loop.operator->(), &Glib::MainLoop::quit));
 
-  //  timeMgr->Play();
+  timeMgr->Play();
 
   main.run(*window);
 
